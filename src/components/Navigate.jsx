@@ -21,7 +21,7 @@ const Navigate = () => {
                   ReqDiv.scrollIntoView();
                 }}
               >
-                START NOW
+                Explore now
               </motion.button>
       </div>
       <div className=" absolute w-[100px] h-[100px] top-1 left-1 gradient-01"></div>
