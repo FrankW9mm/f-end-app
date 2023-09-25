@@ -1,4 +1,4 @@
-
+import { motion } from "framer-motion";
 import React from "react";
 
 const Navigate = () => {
@@ -8,9 +8,21 @@ const Navigate = () => {
         <h1 className="text-white text-[32px]">| F-ENDZ |</h1>
       </div>
       <div>
-        <button className="p-[1rem]  rounded-[20px] bg-white/10 text-white backdrop-blur-3xl">
+        {/* <button className="p-[1rem]  rounded-[20px] bg-white/10 text-white backdrop-blur-3xl">
           Explore now
-        </button>
+        </button> */}
+        <motion.button
+                initial={{ scale: 1 }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 1 }}
+                className="p-[1rem]  rounded-[20px] bg-white/10 text-white backdrop-blur-3xl"
+                onClick={() => {
+                  const ReqDiv = document.getElementById("feat");
+                  ReqDiv.scrollIntoView();
+                }}
+              >
+                START NOW
+              </motion.button>
       </div>
       <div className=" absolute w-[100px] h-[100px] top-1 left-1 gradient-01"></div>
     </div>
