@@ -97,6 +97,24 @@ export const reducer =( state, action)=>{
             palette:action.data
         }
     }
+    // if(action.type === 'IMG_INCOME'){
+    //     return{
+    //         ...state,
+    //         palette:action.data
+    //     }
+    // }
+    if(action.type === 'COLOR_CODE_INCOME'){
+        return{
+            ...state,
+            requestColor:action.data
+        }
+    }
+    if(action.type === 'COLOR_LIST_INCOME'){
+        return{
+            ...state,
+            palette:action.data
+        }
+    }
 }
 
 

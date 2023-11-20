@@ -97,7 +97,7 @@ const ColorPicker = () => {
                 className=" cursor-pointer hover:rotate-12 duration-500"
                 onClick={() => openSave()}
               />
-              <p className="text-white font-thin">OPEN YOUR SAVED COLORS</p>
+              <p onClick={() => openSave()} className="text-white font-thin cursor-pointer  hover:font-medium duration-100">OPEN YOUR SAVED COLORS</p>
             </div>
             <div
               style={{ backgroundColor: `rgba(${r},${g},${b},${a})` }}

@@ -24,7 +24,7 @@ const Save = ({ closeSave, show }) => {
     <div
       className={` ${
         show ? "translate-x-[0%]" : "translate-x-[200%]"
-      } absolute z-[1] lg:w-[100%]  w-full lg:p-[3rem] p-[1rem] rounded-2xl flex flex-col gap-[20px] justify-center items-center bg-[#0E0E0E] duration-500 ease-out`}
+      } absolute z-[1] lg:w-[100%]  w-full min-h-[50vh] lg:p-[3rem] p-[1rem] rounded-2xl flex flex-col gap-[20px] justify-center items-center bg-[#0E0E0E] duration-500 ease-out`}
     >
       {/* <h1 className="text-white">IN DEVELOPMENT</h1>
       <DotWave size={47} speed={1} color="white" />; */}

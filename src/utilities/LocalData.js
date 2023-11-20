@@ -1,6 +1,6 @@
 // import { dispatch } from "react";
 // import { dispatch } from '../pages/ColorPicker';
-"use client";
+// "use client";
 export const getLocalData = () => {
     let list = window.localStorage.getItem("color-list");
     if(list){
