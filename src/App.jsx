@@ -12,7 +12,8 @@ import ColorPicker from './pages/ColorPicker'
 import ImageDummy from './pages/ImageDummy';
 import TextDummy from './pages/TextDummy';
 import NoteDummy from './pages/NoteDummy';
-import ImageSlide from './pages/ImageSlide';
+import ImageGen from './pages/ImageGen';
+import ImageGLobal from './pages/ImageGLobal';
 function App() {
   
 
@@ -24,7 +25,11 @@ function App() {
       <Features data={FeatureData} />
       {/* <ColorPage /> */}
       <ColorPicker />
-      <ImageDummy />
+      
+      <ImageGLobal>
+      <ImageGen />
+      </ImageGLobal>
+     
       <TextDummy />
       <NoteDummy />
     </div>

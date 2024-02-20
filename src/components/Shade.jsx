@@ -141,10 +141,10 @@ const Shade = ({ color }) => {
               <h1 className=" uppercase text-[20px]">Search schemes</h1>
               <AiOutlineCloseCircle onClick={ClosePalette} size={25} />
             </div>
-            {/* palette header and earch bar */}
+            {/* palette header and search bar */}
             <div className="flex  w-full flex-col justify-center items-center">
-              <div className="flex flex-row justify-center gap-[20px] w-full">
-              <input className="w-[150px p-[8px] rounded-md " 
+              <div className="flex mt-[20px] md:flex-row flex-col items-center justify-center gap-[20px] w-full">
+              <input className="w-[150px] p-[8px] rounded-md " 
               placeholder="Enter a Hex Code"
               type="text" name="colorCodeReceiver" id="" 
               value={state.requestColor}
@@ -153,7 +153,7 @@ const Shade = ({ color }) => {
                 
               }}
               />
-              <button className="p-[1rem]  rounded-[20px] bg-white/10 text-white backdrop-blur-3xl"
+              <button className=" md:p-[1rem] p-[0.5rem]  rounded-[20px] bg-white/10 text-white backdrop-blur-3xl"
               onClick={()=>handleColorRequest(state.requestColor)}
               >Get colors</button>
               </div>
