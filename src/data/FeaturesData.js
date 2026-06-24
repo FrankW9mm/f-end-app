@@ -21,10 +21,10 @@ export const FeatureData = [
     },
     {
         id:2,
-        title:'Generate Text',
+        title:'Glassmorphic UI',
         imgurl:text,
         reference:'text',
-        text:'You can choose among given Categories to Generate the block of text. ( Click to action ).'
+        text:'Style your site with a modern glassmorphic design.'
     },
     {
         id:3,

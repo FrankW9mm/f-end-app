@@ -14,6 +14,7 @@ import TextDummy from './pages/TextDummy';
 import NoteDummy from './pages/NoteDummy';
 import ImageGen from './pages/ImageGen';
 import ImageGLobal from './pages/ImageGLobal';
+import Glassmorphic from './pages/Glassmorphic';
 function App() {
   
 
@@ -25,12 +26,11 @@ function App() {
       <Features data={FeatureData} />
       {/* <ColorPage /> */}
       <ColorPicker />
-      
+      <Glassmorphic />
       <ImageGLobal>
       <ImageGen />
       </ImageGLobal>
-     
-      <TextDummy />
+      
       <NoteDummy />
     </div>
     </>

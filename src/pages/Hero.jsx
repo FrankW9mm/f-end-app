@@ -1,5 +1,6 @@
 
 import React, { useRef } from "react";
+import LiquidChrome from "../components/LiquidChrome";
 import Bg from "../components/img/bg.gif";
 import { BsMouse } from "react-icons/bs";
 import { motion, spring } from "framer-motion";
@@ -7,7 +8,8 @@ import { staggerContainer, fadeIn } from "../utilities/AnimationAbs";
 const Hero = () => {
   return (
     <div className=" overflow-clip">
-      <div className="flex flex-col md:items-center items-start bg-[#0E0E0E] md:px-[2rem] px-[1rem] py-[3rem] gap-[30px]">
+      <div className="flex flex-col bg-[#0E0E0E] md:items-center items-start  md:px-[2rem] px-[1rem] py-[3rem] gap-[30px]"> 
+        {/* rrt bg-[#0E0E0E] */}
         <div className="relative w-full flex lg:flex-row flex-col gap-10 lg:items-center items-start justify-evenly">
           <div className=" absolute w-[100px] h-[100px] bottom-[-50%] right-[50%] gradient-01"></div>
           <div className="flex flex-col text-white gap-2">
@@ -74,11 +76,22 @@ const Hero = () => {
             className="md:translate-x-10 translate-x-0"
           />
         </motion.div>
-        <img
+        {/* <img
           className="w-full h-full object-top object-cover"
           src={Bg}
           alt=""
-        />
+        /> */}
+
+       <div style={{ width: '100%', height: '100vh' }}>
+  <LiquidChrome
+    baseColor={[0.023529411764705882,0.0196078431372549,0.054901960784313725]}
+    speed={1.6}
+    amplitude={0.19}
+    interactive
+  />
+</div>   
+
+
       </motion.div>
     </div>
   );

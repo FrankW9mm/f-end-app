@@ -138,3 +138,67 @@ code {
     top: -150px
   }
 }
+
+.glass-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: #0f0f0f; /* Matches your app's dark theme */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* This is the purple glow behind the glass */
+.bg-glow {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #6e39d9; /* Your app's signature purple */
+  filter: blur(50px);
+  border-radius: 50%;
+  top: 20%;
+  left: 30%;
+}
+
+.glass-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7rem;
+  width: 520px;
+  height: 450px;
+  border-radius: 16px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  z-index: 1;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.copy-btn {
+  
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+
+  backdrop-filter: blur(2px);
+  
+
+  background: rgba(255, 255, 255, 0.1);
+  
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
