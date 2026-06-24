@@ -29,6 +29,14 @@ const ImageSearchBar = () => {
 
     }
 
+    const handleKeyDown = (event)=>{
+      if(event.key === 'Enter'){
+        // getImagesFromApi(search);
+        console('hallo ')
+      }
+
+    }
+
 
 
   return (
@@ -42,10 +50,17 @@ const ImageSearchBar = () => {
               onChange={(e)=>{ 
                 SetSearch(e.target.value)
               }}
+              onKeyDown={(e)=>{
+                if(e.key === 'Enter'){
+                  getImagesFromApi(data.text)
+                }
+                
+              }}
               />
 
         <button className=" md:p-[1rem] p-[0.5rem]  rounded-[20px] bg-white/10 text-white backdrop-blur-3xl"
               onClick={()=> getImagesFromApi(search)}
+              onKeyDown={(e)=>handleKeyDown(e)}
         >
             <FaSearch />
         </button>
